@@ -1,0 +1,2 @@
+class CookingConversionsApp():
+    def __init__(self):
