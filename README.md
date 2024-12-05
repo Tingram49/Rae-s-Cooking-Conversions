@@ -2,13 +2,14 @@ My family and I were cooking dinner one night while talking about ideas for a pr
 might be useful. While talking about it, we got
 interrupted with the question of “How many Tablespoons are in a cup?” and from there,
 the idea was born. An application that can take any cooking measurement and give you
-the equivalent conversions for other units, Cups, Tsp, Tbsp, Fl Oz, ML.
+the equivalent conversions for other units, Cups, Tsp, Tbsp, Fl Oz, ML. It will also convert recipes serving portions as well. 
 
 • The name of the GUI application.
 - Rae’s Cooking Conversions
   
 • What is the purpose of the Application?
 - To easily convert one cooking measurement into other formats.
+- Recieve a receipt from user and the number of servings it provides, then converts the receipe for another desired nbumber of users.
   
 • List the reason you are creating the Application.
 - To save time and remove guess work when needing to change one
