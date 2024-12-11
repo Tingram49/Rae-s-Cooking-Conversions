@@ -42,6 +42,16 @@ class FoodApp(tk.Tk):
         bg_label = tk.Label(self.home_frame, image=self.bg_photo3)
         bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 
+        # Welcome Label
+        welcome_label = tk.Label(
+            self.home_frame,
+            text="Welcome to Rae's Cooking Conversions! Select which feature you would like to use or exit to leave.",
+            font=("Arial", 15),
+            wraplength=280,
+            justify="center",
+        )
+        welcome_label.place(relx=0.518, rely=0.35, anchor="center")
+
         # Buttons
         button_container = tk.Frame(self.home_frame)
         button_container.place(relx=0.5, rely=0.5, anchor="center")
@@ -168,7 +178,7 @@ class FoodApp(tk.Tk):
         bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 
         # Ingredents
-        instructions_label = tk.Label(self.serving_size_frame, text="Enter ingredients, measurements, and select units. Then provide the expected number of servings and your desired number of settings!")
+        instructions_label = tk.Label(self.serving_size_frame, text="Enter ingredients, measurements, and select units. Then provide the recipe's number of servings and your desired number of servings!")
         instructions_label.pack(pady=10)
         self.ingredients = []
         units = ["Teaspoon (tsp)", "Tablespoon (tbsp)", "Fluid Ounce (fl oz)", "Cup (c)", "Pint (pt)", "Quart (qt)", "Gallon (gal)"]
@@ -253,7 +263,7 @@ class FoodApp(tk.Tk):
             self.serving_result_label.config(text="Please enter valid numeric values for servings.")
 
     def show_frame(self, frame):
-        
+
         # Forgets packs so not all 3 pics load at once.
         self.home_frame.pack_forget()
         self.unit_conversion_frame.pack_forget()
